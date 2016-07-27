@@ -1,0 +1,35 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Color Game</title>
+
+        <link rel="stylesheet" href="color.css" type="text/css" media="screen" />
+
+       <script src="jquery-2.2.4.min.js"></script>
+
+        <script type="text/javascript" src="app.js"></script>
+        <script>
+        var colorGame = new colorGame();
+        </script>
+    </head>
+    <body>
+        <div class="board">
+            <div class="score">
+                <span id="round">0</span> / 10
+            </div>
+            <div class="message">Reproduisez 10 fois la séquence<br>sans vous tromper !</div>
+            <div class="contentGame">
+                <div class="chrono"><a onClick="colorGame.init();"><img src='assets/chrono/start.png')}}' alt="Vous êtes prêt(e)? COMMENCEZ"></a></div>
+                <ul class="list-color">
+                    <li><img class="tile pink" data-tile="1" src='assets/cases/pink.png' alt=""></li>
+                    <li><img class="tile yellow" data-tile="2" src='assets/cases/yellow.png' alt=""></li>
+                    <li><img class="tile red" data-tile="3" src='assets/cases/red.png' alt=""></li><br>
+                    <li><img class="tile green" data-tile="4" src='assets/cases/green.png' alt=""></li>
+                    <li><img class="tile azur" data-tile="5" src='assets/cases/azur.png' alt=""></li>
+                    <li><img class="tile blue"   data-tile="6" src='assets/cases/blue.png' alt=""></li>
+                </ul>
+            </div>
+            <span id="gameover"></span>
+        </div>
+    </body>
+</html>
